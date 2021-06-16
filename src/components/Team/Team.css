@@ -1,0 +1,16 @@
+.Percentage-hide {
+  display: none;
+}
+
+.Team-logo {
+  width: 200px;
+}
+
+.teamColor {
+  background-color: pink;
+  width: 250px;
+}
+
+.shotsColor {
+  background-color: aquamarine;
+}

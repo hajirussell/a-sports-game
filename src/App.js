@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Game from "./components/Game/Game";
+
+const raccoons = {
+  name: "Russiaville Raccoons",
+  logoSrc:
+    "https://raw.githubusercontent.com/p-mayor/davey-react-sports-lab-basic/master/assets/images/raccoon.png",
+};
+const squirrels = {
+  name: "Sheridan Squirrels",
+  logoSrc:
+    "https://raw.githubusercontent.com/p-mayor/davey-react-sports-lab-basic/master/assets/images/squirrel.png",
+};
+const bunnies = {
+  name: "Burlington Bunnies",
+  logoSrc:
+    "https://raw.githubusercontent.com/p-mayor/davey-react-sports-lab-basic/master/assets/images/bunny.png",
+};
+const hounds = {
+  name: "Hammond Hounds",
+  logoSrc:
+    "https://raw.githubusercontent.com/p-mayor/davey-react-sports-lab-basic/master/assets/images/hound.png",
+};
+
+const venue = {
+  name1: "Barclay Center",
+  name2: "Madison Square Garden",
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section>
+      <div>
+        <Game homeTeam={raccoons} visitingTeam={squirrels} />
+      </div>
+      <div>
+        <Game homeTeam={bunnies} visitingTeam={hounds} />
+      </div>
+    </section>
   );
 }
-
 export default App;
